@@ -1,4 +1,4 @@
-filterSelection("all")
+filterSelection("cars")
 activeCurrentButton()
 
 function filterSelection(c) {
