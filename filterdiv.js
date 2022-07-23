@@ -1,6 +1,4 @@
 filterSelection("all")
-
-
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("hcb-filterDiv");
@@ -31,7 +29,7 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
+activeCurrentButton()
 // Add active class to the current button (highlight it)
 function activeCurrentButton() {
   var btnContainer = document.getElementById("hcb-myBtnContainer");
