@@ -1,5 +1,5 @@
 filterSelection("all")
-activeCurrentButton()
+
 
 function filterSelection(c) {
   var x, i;
