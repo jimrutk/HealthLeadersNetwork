@@ -1,4 +1,6 @@
 filterSelection("all")
+activeCurrentButton()
+
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("hcb-filterDiv");
@@ -31,13 +33,15 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("hcb-myBtnContainer");
-var btns = btnContainer.getElementsByClassName("hcb-btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+function activeCurrentButton() {
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+}  
 
