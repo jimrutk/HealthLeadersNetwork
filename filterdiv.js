@@ -1,5 +1,5 @@
 filterSelection("all")
-
+activeCurrentButton()
 
 function filterSelection(c) {
   var x, i;
@@ -33,7 +33,7 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-
+function activeCurrentButton() {
   var btnContainer = document.getElementById("hcb-myBtnContainer");
   var btns = btnContainer.getElementsByClassName("hcb-btn");
   for (var i = 0; i < btns.length; i++) {
@@ -43,5 +43,4 @@ function w3RemoveClass(element, name) {
       this.className += " hcb-active";
     });
   }
-
-
+}  
