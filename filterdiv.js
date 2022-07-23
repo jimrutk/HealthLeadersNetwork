@@ -1,5 +1,5 @@
-filterSelection("cars");
-activeCurrentButton();
+filterSelection("cars")
+activeCurrentButton()
 
 function filterSelection(c) {
   var x, i;
