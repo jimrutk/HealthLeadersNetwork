@@ -38,9 +38,9 @@ function activeCurrentButton() {
   var btns = btnContainer.getElementsByClassName("hcb-btn");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("hcb-active");
-      current[0].className = current[0].className.replace(" hcb-active", "");
-      this.className += " hcb-active";
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
     });
   }
 }  
