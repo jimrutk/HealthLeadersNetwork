@@ -1,4 +1,5 @@
 filterSelection("all")
+activeCurrentButton()
 
 function filterSelection(c) {
   var x, i;
@@ -8,7 +9,6 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "hcb-show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "hcb-show");
   }
-  activeCurrentButton();
 }
 
 function w3AddClass(element, name) {
