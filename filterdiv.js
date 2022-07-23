@@ -1,4 +1,5 @@
-filterSelection("cars");
+// As far as I can tell, these are not getting run...
+filterSelection("all");
 activeCurrentButton();
 
 function filterSelection(c) {
