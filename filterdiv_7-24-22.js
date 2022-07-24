@@ -35,8 +35,7 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current button (highlight it)
 function activeCurrentButton() {
-  var btnContainer = document.getElementById("hcb-myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("hcb-btn");
+  var btns = document.getElementsByClassName("hcb-btn");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
       var current = document.getElementsByClassName("hcb-active");
