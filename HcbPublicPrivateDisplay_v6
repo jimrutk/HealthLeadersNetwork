@@ -4,6 +4,7 @@ const hcbObj = JSON.parse(Hivebrite);
 /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
 var tmp;
 tmp = document.getElementById("showJWT");
+tmp.style.background-color = "red";
 tmp.innerHTML += "test addition";
 
 if (hcbObj.data.jwt !== null) {
