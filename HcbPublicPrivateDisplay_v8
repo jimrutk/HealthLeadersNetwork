@@ -1,14 +1,17 @@
-/* get the Hivebrite JSON object for the page
-const hcbObj = JSON.parse(Hivebrite);
+hcbDisplayForContext();
 
-/* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
-var tmp;
-document.getElementById("showJWT").style.border = "solid 1px red";
+function hcbDisplayForContext () {
+  /* get the Hivebrite JSON object for the page
+  const hcbObj = JSON.parse(Hivebrite);
 
-if (hcbObj.data.jwt !== null) {
-  hcbShowPublicVersion();
-} else {
-  hcbShowPrivateVersion();
+  /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
+  document.getElementById("showJWT").style.border = "solid 1px red";
+
+  if (hcbObj.data.jwt !== null) {
+    hcbShowPublicVersion();
+  } else {
+    hcbShowPrivateVersion();
+  }
 }
 
 function hcbShowPublicVersion() {
