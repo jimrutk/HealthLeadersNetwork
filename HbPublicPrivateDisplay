@@ -1,7 +1,9 @@
 /* get the Hivebrite JSON object for the page
-hcbObj = JSON.parse("Hivebrite");
+var hcbObj = JSON.parse("Hivebrite");
 /* if user is logged in show relevant content using class hcb-private-content */
-If hcbObj.data.jwt != Null then 
+If (hcbObj.data.jwt != Null) {
   Set the class where needed
+} else {
 /* else show any public-only contnet using class hcb-public-content */
   Set the class where needed
+}
