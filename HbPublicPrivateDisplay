@@ -1,0 +1,7 @@
+/* get the Hivebrite JSON object for the page
+hcbObj = JSON.parse("Hivebrite");
+/* if user is logged in show relevant content using class hcb-private-content */
+If hcbObj.data.jwt != Null then 
+  Set the class where needed
+/* else show any public-only contnet using class hcb-public-content */
+  Set the class where needed
