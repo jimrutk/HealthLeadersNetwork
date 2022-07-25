@@ -3,9 +3,7 @@ const hcbObj = JSON.parse(Hivebrite);
 
 /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
 var tmp;
-tmp = document.getElementById("showJWT");
-tmp.style.background-color = "red";
-tmp.innerHTML += "test addition";
+document.getElementById("showJWT").style.border = "solid 1px red";
 
 if (hcbObj.data.jwt !== null) {
   hcbShowPublicVersion();
