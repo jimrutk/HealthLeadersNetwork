@@ -1,5 +1,5 @@
 /* get the Hivebrite JSON object for the page
-const hcbObj = JSON.parse(HiveBrite);
+const hcbObj = JSON.parse(Hivebrite);
 
 if (hcbObj.data.jwt !== null) {
   hcbShowPublicVersion();
