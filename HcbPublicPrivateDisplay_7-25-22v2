@@ -1,6 +1,9 @@
 /* get the Hivebrite JSON object for the page
 const hcbObj = JSON.parse(Hivebrite);
 
+document.getElementById("showJWT").innerHTML += hcbObj.data.jwt;
+
+
 if (hcbObj.data.jwt !== null) {
   hcbShowPublicVersion();
 } else {
