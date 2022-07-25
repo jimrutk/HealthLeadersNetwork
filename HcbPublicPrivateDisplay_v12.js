@@ -5,12 +5,9 @@ function hcbDisplayForContext () {
   const hcbObj = JSON.parse(Hivebrite);
 
   /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
-  const jwtToken = getJwtToken();
-  if (!jwtToken) {
-    document.getElementById("showJWT").innerHTML += "have token"; 
-  }
+  document.getElementById("showJWT").innerHTML += Hivebrite.data.jwt; 
   
-  if (hcbObj.data.jwt !== null) {
+  if (Hivebrite.data.jwt !== null) {
     hcbShowPublicVersion();
   } else {
     hcbShowPrivateVersion();
