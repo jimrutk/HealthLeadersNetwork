@@ -3,9 +3,9 @@ hcbDisplayForContext();
 function hcbDisplayForContext () {
   
   if (Hivebrite.data.jwt !== null) {
-    hcbShowPublicVersion();
-  } else {
     hcbShowPrivateVersion();
+  } else {
+    hcbShowPublicVersion();
   }
 }
 
