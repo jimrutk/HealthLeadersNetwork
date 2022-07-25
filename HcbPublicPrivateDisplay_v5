@@ -2,7 +2,9 @@
 const hcbObj = JSON.parse(Hivebrite);
 
 /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
-document.getElementById("showJWT").innerHTML += "test addition";
+var tmp;
+tmp = document.getElementById("showJWT");
+tmp.innerHTML += "test addition";
 
 if (hcbObj.data.jwt !== null) {
   hcbShowPublicVersion();
