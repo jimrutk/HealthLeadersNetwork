@@ -1,11 +1,6 @@
 hcbDisplayForContext();
 
 function hcbDisplayForContext () {
-  /* get the Hivebrite JSON object for the page
-  const hcbObj = JSON.parse(Hivebrite);
-
-  /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
-  document.getElementById("showJWT").innerHTML += Hivebrite.data.jwt; 
   
   if (Hivebrite.data.jwt !== null) {
     hcbShowPublicVersion();
