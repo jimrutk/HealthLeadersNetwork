@@ -5,7 +5,10 @@ function hcbDisplayForContext () {
   const hcbObj = JSON.parse(Hivebrite);
 
   /* document.getElementById("showJWT").innerHTML += hcbObj.data.jwt; */
-  document.getElementById("showJWT").innerHTML += "added text"; 
+  const jwtToken = getJwtToken();
+  if (!jwtToken) {
+    document.getElementById("showJWT").innerHTML += "have token"; 
+  }
   
   if (hcbObj.data.jwt !== null) {
     hcbShowPublicVersion();
