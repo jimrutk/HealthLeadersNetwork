@@ -1,9 +1,32 @@
 /* get the Hivebrite JSON object for the page
-const hcbObj = JSON.parse("Hivebrite");
-/* if user is logged in show relevant content using class hcb-private-content */
-If (hcbObj.data.jwt != Null) {
-  Set the class where needed
+const hcbObj = JSON.parse(HiveBrite);
+
+if (hcbObj.data.jwt !== null) {
+  hcbShowPublicVersion();
 } else {
-/* else show any public-only contnet using class hcb-public-content */
-  Set the class where needed
+  hcbShowPrivateVersion();
+}
+
+function hcbShowPublicVersion() {
+  var x, i;
+  x = document.getElementsByClassName("hcb-publiconly");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "block";
+  }
+  x = document.getElementsByClassName("hcb-privateonly");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+}
+
+function hcbShowPrivateVersion() {
+  var x, i;
+  x = document.getElementsByClassName("hcb-privateonly");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "block";
+  }
+  x = document.getElementsByClassName("hcb-publiconly");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
 }
