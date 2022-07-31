@@ -1,6 +1,6 @@
 window.onscroll = function() {hcbStickyMenu()};
 
-var hcbNavbar = document.getElementById("hcb-pagemenu");
+var hcbNavbar = document.getElementById("hcb-pspagemenu");
 var hcbSticky = hcbNavbar.offsetTop - 75;
 
 function hcbStickyMenu() {
