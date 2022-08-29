@@ -14,7 +14,7 @@ var hcbnavbar = document.getElementById("hcb-pspagemenu");
 var hcbSticky = navbar.offsetTop - hcbStickyStart;
 
 
-function myFunction() {
+function hcbStickyMenu() {
   if (window.pageYOffset >= hcbSticky) {
     navbar.classList.add("hcb-sticky")
     navbar.style.top = hcbTopUpdate;
