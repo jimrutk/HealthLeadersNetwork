@@ -16,10 +16,10 @@ var hcbSticky = navbar.offsetTop - hcbStickyStart;
 
 function hcbStickyMenu() {
   if (window.pageYOffset >= hcbSticky) {
-    navbar.classList.add("hcb-sticky")
-    navbar.style.top = hcbTopUpdate;
+    hcbnavbar.classList.add("hcb-sticky")
+    hcbnavbar.style.top = hcbTopUpdate;
 
   } else {
-    navbar.classList.remove("hcb-sticky");
+    hcbnavbar.classList.remove("hcb-sticky");
   }
 }
