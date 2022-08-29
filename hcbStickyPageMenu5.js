@@ -1,3 +1,5 @@
+/* I broke something in here and not sure what it is... will fix another time... */
+
 window.onscroll = function() {hcbStickyMenu()};
 
 /* Find the bottom of the sticky menu that is already on the page */
